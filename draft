@@ -1,0 +1,19 @@
+<Button title="New plan" onPress={() => navigate('EditPlan', {plan: this.state.plans})}/>
+<Text>{Object.values(this.props.plan)}</Text>
+<MultiSelectList data={this.state.plan}/>
+
+JSON.stringify
+
+db
+datepicker
+smartwartch
+bv
+image
+
+in class: this., in render(): direct
+
+1. var anon = function (a, b) { return a + b };
+2. const doubler = value => value * 2;
+3. const doubler = (value) => {
+    return value * 2;
+}

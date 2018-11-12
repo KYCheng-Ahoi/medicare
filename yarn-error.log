@@ -1,0 +1,56 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add unstated
+
+PATH: 
+  /home/flo/.nix-profile/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  8.11.3
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/expo: tunneling socket could not be established, cause=read ECONNRESET
+      at ClientRequest.onError (/usr/share/yarn/lib/cli.js:147299:17)
+      at Object.onceWrapper (events.js:315:30)
+      at emitOne (events.js:116:13)
+      at ClientRequest.emit (events.js:211:7)
+      at Socket.socketErrorListener (_http_client.js:387:9)
+      at emitOne (events.js:116:13)
+      at Socket.emit (events.js:211:7)
+      at emitErrorNT (internal/streams/destroy.js:64:8)
+      at _combinedTickCallback (internal/process/next_tick.js:138:11)
+      at process._tickCallback (internal/process/next_tick.js:180:9)
+
+npm manifest: 
+  {
+    "name": "empty-project-template",
+    "main": "node_modules/expo/AppEntry.js",
+    "private": true,
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "eject": "expo eject"
+    },
+    "dependencies": {
+      "expo": "^30.0.1",
+      "pouchdb-react-native": "^6.4.1",
+      "react": "16.3.1",
+      "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz",
+      "react-native-elements": "^0.19.1",
+      "react-navigation": "^2.18.0",
+      "react-redux": "^5.0.7",
+      "redux": "^4.0.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
